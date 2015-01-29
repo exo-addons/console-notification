@@ -54,7 +54,7 @@
 					<object
 						type="org.exoplatform.commons.api.notification.plugin.config.PluginConfig">
 						<field name="pluginId">
-							<string>UpdateProfileBaseInfoPlugin</string>
+							<string>UpdateProfileBaseInfo_4_1_x_Plugin</string>
 						</field>
 						<field name="resourceBundleKey">
 							<string>UINotification.label.UpdateProfileBaseInfo_4_1_x_Plugin</string>
@@ -87,7 +87,7 @@
 			<init-params>
 				<object-param>
 					<name>template.UpdateProfileHeaderPlugin</name>
-					<description>The template of ActivityMentionPlugin</description>
+					<description>The template of UpdateProfileHeaderPlugin</description>
 					<object
 						type="org.exoplatform.commons.api.notification.plugin.config.PluginConfig">
 						<field name="pluginId">
@@ -97,7 +97,7 @@
 							<string>UINotification.label.UpdateProfileHeaderPlugin</string>
 						</field>
 						<field name="order">
-							<string>5</string>
+							<string>11</string>
 						</field>
 						<field name="defaultConfig">
 							<collection type="java.util.ArrayList">
