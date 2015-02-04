@@ -72,14 +72,18 @@
 						<field name="groupId">
 							<string>general</string>
 						</field>
-						<field name="bundlePath">
-							<string>locale.notification.template.Notification</string>
+						<field name="templateConfig">
+							<object type="org.exoplatform.commons.api.notification.plugin.config.TemplateConfig">
+								<field name="bundlePath">
+									<string>locale.notification.template.ConsoleNotification</string>
+								</field>
+							</object>
 						</field>
 					</object>
 				</object-param>
 			</init-params>
 		</component-plugin>
-		<component-plugin>
+		<!--component-plugin>
 			<name>notification.plugins</name>
 			<set-method>addPlugin</set-method>
 			<type>org.exoplatform.social.notification.plugin.UpdateProfileHeaderPlugin</type>
@@ -115,6 +119,6 @@
 					</object>
 				</object-param>
 			</init-params>
-		</component-plugin>
+		</component-plugin-->
 	</external-component-plugins>
 </configuration>
