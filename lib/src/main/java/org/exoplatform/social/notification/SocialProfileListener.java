@@ -45,7 +45,11 @@ public class SocialProfileListener extends ProfileListenerPlugin {
   }
 
   @Override
-  public void contactSectionUpdated(ProfileLifeCycleEvent event) {}
+  public void contactSectionUpdated(ProfileLifeCycleEvent event) {
+    Profile profile = event.getProfile();
+    NotificationContext ctx = NotificationContextImpl.cloneInstance().append(UpdateProfileHeaderPlugin.PROFILE, profile);
+    ctx.getNotificationExecutor().with(ctx.makeCommand(PluginKey.key(UpdateProfileHeaderPlugin.ID))).execute(ctx);
+  }
 
   @Override
   public void experienceSectionUpdated(ProfileLifeCycleEvent event) {}

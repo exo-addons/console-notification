@@ -78,6 +78,7 @@ public class UpdateProfileHeaderPlugin extends BaseNotificationPlugin {
     return NotificationInfo.instance()
                            .setFrom(updatedIdentity.getRemoteId())
                            .to(new ArrayList<String>(receivers))
+                           .setTitle(updatedIdentity.getProfile().getFullName() + " updated his/her profile.<br>")
                            .key(getId());
   }
 
