@@ -1,0 +1,8 @@
+<li class="$READ clearfix" data-id="$NOTIFICATION_ID">
+  <div class="media">
+    <div class="media-body">
+        <div class="content"><i class="uiIcon uiIconComment uiIconLightGray"></i>$TITLE</div>
+    </div>
+  </div>
+  <span class="remove-item" data-rest=""><i class="uiIconClose uiIconLightGray"></i></span>
+</li>
