@@ -65,7 +65,7 @@ public class FileChannel extends AbstractChannel {
   
   @Override
   public void dispatch(NotificationContext ctx, String userId) {
-    LOG.info(String.format("FILE:: %s will be received the message from pluginId: %s", userId, ctx.getNotificationInfo().getKey().getId()));
+    LOG.info(String.format("FILE:: %s will receive the message from pluginId: %s", userId, ctx.getNotificationInfo().getKey().getId()));
     AbstractTemplateBuilder templateBuilder = getTemplateBuilderInChannel(ctx.getNotificationInfo().getKey());
     MessageInfo msg = templateBuilder.buildMessage(ctx);
     
