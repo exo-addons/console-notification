@@ -63,6 +63,9 @@ public class ConsoleChannel extends AbstractChannel {
     LOG.info(String.format("CONSOLE:: %s will receive the message from pluginId: %s",
                            userId,
                            ctx.getNotificationInfo().getKey().getId()));
+    AbstractTemplateBuilder templateBuilder = getTemplateBuilderInChannel(ctx.getNotificationInfo().getKey());
+    MessageInfo msg = templateBuilder.buildMessage(ctx);
+    LOG.info("Console notification: " + msg);
   }
   
   @Override
