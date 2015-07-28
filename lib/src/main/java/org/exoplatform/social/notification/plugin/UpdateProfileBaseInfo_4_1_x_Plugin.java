@@ -62,7 +62,7 @@ public class UpdateProfileBaseInfo_4_1_x_Plugin extends AbstractNotificationPlug
     Identity identity = identityManager.getOrCreateIdentity(OrganizationIdentityProvider.NAME, notification.getFrom(), false);
     Profile profile = identityManager.getProfile(identity);
     String subject = profile.getFullName() + SUBJECT;
-    String body = profile.getFullName() + SUBJECT;
+    String body = profile.getFullName() + SUBJECT + "<br/>";
     
     return messageInfo.from(notification.getFrom()).subject(subject).body(body).end();
   }
@@ -102,6 +102,7 @@ public class UpdateProfileBaseInfo_4_1_x_Plugin extends AbstractNotificationPlug
     return NotificationInfo.instance()
                            .setFrom(updatedIdentity.getRemoteId())
                            .to(new ArrayList<String>(receivers))
+                           .setTitle(updatedIdentity.getProfile().getFullName() + " updated the basic info.<br>")
                            .key(getId());
   }
 
