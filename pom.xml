@@ -41,7 +41,7 @@
 
   <properties>
     <!-- Platform Project Dependencies -->
-    <org.exoplatform.social.version>4.2.x-SNAPSHOT</org.exoplatform.social.version>
+    <org.exoplatform.social.version>4.3.x-SNAPSHOT</org.exoplatform.social.version>
     
     <argLine>-Xmx1024m -XX:MaxPermSize=512m</argLine>
   </properties>
