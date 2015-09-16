@@ -47,7 +47,7 @@
                   <field name="dependencies">
                      <collection type="java.util.ArrayList">
                         <value>
-                          <string>console-notification-addon-webapp</string>
+                          <string>console-notification-addons</string>
                         </value>
                      </collection>
                   </field>

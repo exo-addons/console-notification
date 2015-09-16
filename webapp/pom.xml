@@ -31,7 +31,7 @@
   <description>Console Notification Addon Webapp</description>
   
   <build>
-    <finalName>console-notification-addon-webapp</finalName>
+    <finalName>console-notification-addons</finalName>
   </build>
   
 </project>

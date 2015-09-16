@@ -33,7 +33,7 @@
 				<include>${project.groupId}:console-notification-addon-webapp:war</include>
 			</includes>
 			<scope>provided</scope>
-			<outputFileNameMapping>console-notification-addon-webapp.war</outputFileNameMapping>
+			<outputFileNameMapping>console-notification-addons.war</outputFileNameMapping>
 		</dependencySet>
 		<!-- Libraries -->
 		<dependencySet>

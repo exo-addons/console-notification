@@ -32,12 +32,6 @@
   <dependencies>
     <dependency>
       <groupId>${project.groupId}</groupId>
-      <artifactId>console-notification-addon-config</artifactId>
-      <version>${project.version}</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>${project.groupId}</groupId>
       <artifactId>console-notification-addon-lib</artifactId>
       <version>${project.version}</version>
       <scope>provided</scope>
